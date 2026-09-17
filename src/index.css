@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #0f172a;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Subtle light technical grid pattern */
+.bg-light-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+}
+
+/* Soft ambient blue glows for light mode */
+.bg-soft-glow {
+  background: radial-gradient(circle at 50% 15%, rgba(56, 189, 248, 0.12) 0%, rgba(2, 132, 199, 0.04) 40%, transparent 70%);
+}
+
+.bg-soft-blue-radial {
+  background: radial-gradient(circle at 80% 20%, rgba(186, 230, 254, 0.45) 0%, rgba(224, 242, 254, 0.25) 35%, transparent 65%);
+}
+
+.font-display {
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+/* Clean refined light scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Subtle line separator for editorial divider */
+.editorial-line {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.06) 0%, rgba(2, 132, 199, 0.25) 50%, rgba(15, 23, 42, 0.06) 100%);
+}
